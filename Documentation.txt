@@ -1,0 +1,13 @@
+Documentation
+The python code helps to find the BMI using the data which contains the weight in Kg and Height in cm. 
+The following steps are implemented in the code:
+1. The data is loaded from the json file using the json package
+2. The loaded data is used to create a pandas dataframe
+3. BMI is calculated using the formula - weight in kgs/((height in cm)/100)*(((height in cm)/100)). 
+   This is implemented in the python code as a lambda function
+4. Using the provided the BMI to BMI catgeory mapping, each of the calculated BMI's are mapped to the corresponding category.
+   The BMI Category mapping is implemented using a lambda function with if else conditions
+5. Using the provided the BMI to Health Risk catgeory mapping, each of the calculated BMI's are mapped to the corresponding category.
+   The Health Risk catgeory mapping is also implemented using a lambda function with if else conditions
+6. The newly calculated attributes are appended to the existing dataframe
+7. The total number of overweight people are found
